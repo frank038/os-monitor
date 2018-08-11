@@ -1,6 +1,6 @@
 by frank38
 
-An operation system resource monitor.
+An operation system resource monitor made for fun.
 
 Programs and modules required:
 - Python3
