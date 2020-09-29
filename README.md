@@ -1,3 +1,4 @@
+V. 1.4
 by frank38
 
 An operation system resource monitor made for fun.
@@ -5,6 +6,7 @@ An operation system resource monitor made for fun.
 Programs and modules required:
 - Python3
 - Gtk3 for Python
+- Cairo for Python
 - psutil (python3 module): >= 5.1.0 (at least 4.3.0 with less features: no cpu frequencies and temperatures)
 
 The Monitors:
