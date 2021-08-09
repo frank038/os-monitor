@@ -31,3 +31,11 @@ or, e.g.,
 In this case, the monitors update their values every three seconds.
 
 ![My image](https://github.com/frank038/os-monitor/blob/master/os_monitor-01.png)
+
+![My image](https://github.com/frank038/os-monitor/blob/master/os_monitor-02.png)
+
+![My image](https://github.com/frank038/os-monitor/blob/master/os_monitor-03.png)
+
+![My image](https://github.com/frank038/os-monitor/blob/master/os_monitor-04.png)
+
+![My image](https://github.com/frank038/os-monitor/blob/master/os_monitor-05.png)
