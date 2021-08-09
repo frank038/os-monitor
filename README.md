@@ -29,3 +29,5 @@ In this case, the monitors update their values every second.
 or, e.g.,
 : python3 os_monitor.py 3
 In this case, the monitors update their values every three seconds.
+
+![My image](https://github.com/frank038/os-monitor/blob/master/os_monitor-01.png)
