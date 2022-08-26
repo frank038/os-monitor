@@ -1,5 +1,4 @@
 V. 1.5
-by frank38
 
 An operation system resource monitor made for fun.
 
