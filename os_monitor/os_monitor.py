@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 # by frank38
-# V. 1.5.0
+# V. 1.6.1
 
 
 import gi
@@ -28,7 +28,7 @@ limit_cpu_number = 8
 # loop interval
 LOOP_INTERVAL = 2
 # use psutil to read current core frequency (1) or read data from sys (0)
-USE_PSUTIL_FREQ = 1
+USE_PSUTIL_FREQ = 0
 # sys path of cpu current frequency
 SYS_CUR_FREQ = "/sys/devices/system/cpu/cpu0/node0"
 
@@ -616,7 +616,10 @@ class mainwindow(Gtk.Window):
         u_name = uname_list.sysname
         u_nodename = uname_list.nodename
         u_release = uname_list.release
-        u_dmname = os.environ['XDG_CURRENT_DESKTOP']
+        try:
+            u_dmname = os.environ['XDG_CURRENT_DESKTOP']
+        except KeyError:
+            u_dmname = "Unknown"
         u_totmem = psutil.virtual_memory().total
         u_swapmem = 0
         try:
@@ -661,10 +664,10 @@ class mainwindow(Gtk.Window):
             self.label10.set_text(u_proc_model_name+" x ("+str(u_proc_num_real)+"+"+str(u_proc_num)+")")
         # set the logo
         if u_sysname == "Linux":
-            pixbuf = GdkPixbuf.Pixbuf.new_from_file_at_scale('Tux.svg', 100, 100, 0)
+            pixbuf = GdkPixbuf.Pixbuf.new_from_file_at_scale('Tux.png', 100, 100, 0)
             self.logop.set_from_pixbuf(pixbuf)
         else:
-            pixbuf = GdkPixbuf.Pixbuf.new_from_file_at_scale('Tux.svg', 100, 100, 0)
+            pixbuf = GdkPixbuf.Pixbuf.new_from_file_at_scale('Tux.png', 100, 100, 0)
             self.logop.set_from_pixbuf(pixbuf)
         
         # set the labels
