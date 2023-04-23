@@ -1,4 +1,4 @@
-V. 1.5
+V. 1.6.1
 
 An operation system resource monitor made for fun.
 
